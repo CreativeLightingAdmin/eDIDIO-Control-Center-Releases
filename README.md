@@ -11,7 +11,7 @@ You can call linked commands from the LUA script to run functions in the applica
 
 | Command | Description |
 | --- | --- |
-| ShowNotification(string) | List all new or modified files |
+| ShowNotification(string) | Displays a quick notification box if the program is open |
 | GetTime(time) | Retrieves a time String with format "MM/dd/yyyy HH:mm:ss" |
 | DALIArcMessage(line, address, level) | Sends a DALI Arc Level (0-254) |
 | DALIQueryStatus(line, address) | Queries the DALI Status of a device |
