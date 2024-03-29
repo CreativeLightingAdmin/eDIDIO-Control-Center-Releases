@@ -15,11 +15,11 @@ You can call linked commands from the LUA script to run functions in the applica
 | GetTime(time) | Retrieves a time String with format "MM/dd/yyyy HH:mm:ss" |
 | DALIArcMessage(line, address, level) | Sends a DALI Arc Level (0-254) |
 | DALIQueryStatus(line, address) | Queries the DALI Status of a device |
-| DALIQueryLevel(line, address | Queries the DALI Level of a device |
+| DALIQueryLevel(line, address) | Queries the DALI Level of a device |
 | DALIQuery(line, address, query) | Sends any Query - Note 'packet >> 24' provides the packet type |
 | SendDALIFrame(line, frame, is24bit_bool) | Sends a 16 or 24 bit DALI frame |
 | SendDALIFrameWithReply(line, frame, is24bit_bool) | Sends a 16 or 24 bit DALI frame with Reply |
-| DALIColour(line, address, red, green, blue) | Sends R,G,B colour to address-address + 2 |
+| DALIColour(line, address_red, address_green, address_blue, colour) | Sends colour to an RGB Address |
 | SendeDIDIOTrigger(line, target, query, type, zone, value) | See ProtoBufs |
 | HttpPost(baseAddress, address, json) | Sends a HttpPost Request |
 | HttpGet(baseAddress, address) | Sends a HttpGet Request |
